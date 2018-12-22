@@ -11,6 +11,7 @@ services:
             NAME: "rabbitmq"
         volumes:
             - rabbitmq-data:/var/lib/rabbitmq
+            - ./rabbit-isolated.conf:/etc/rabbitmg.config
     
 volumes:
     rabbitmq-data:
